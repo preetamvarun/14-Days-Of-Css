@@ -1,0 +1,187 @@
+<!-- Basics of html and css -->
+
+<!-- ! + enter to generate the starter code in html  -->
+
+
+<!Doctype html> 
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/14Daysofcss/Day-1/day1.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Starting my web development journey</h1>
+
+    <!-- Headings paragraphs and topography -->
+
+    <!-- Different types of headings -->
+
+    <h1>This is 1st heading</h1>
+    <h2>This is second heading</h2>
+    <h3>This is third heading</h3>
+    <h4>This is fourth heading</h4>
+    <h5>This is fifth heading</h5>
+    <h6>This is sixth heading</h6>
+
+<p>Lorem ipsum dolor sit amet consectetur <strong>this is bold text (1) </strong>adipisicing elit. Aperiam eaque 
+deserunt sunt suscipit, <b>this is bold text (2)</b> minima assumenda <em>this text is italic</em> voluptate similique blanditiis?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reprehenderit perferendis reiciendis 
+unde repudiandae quia asperiores. <del>This text is deleted</del> natus, iusto eos dolor ipsam exercitationem reiciendis, praesentium adipisci aperiam ab, dolore eius?
+
+<!-- type lorem(some number) to generate dummy text -->
+
+<!-- Adding line breaks -->
+<br>
+this is line 1 <br>
+this is line 2 <hr>
+this is line 3 
+
+<!-- unlike br tag hr (horizontal strike through) tag adds a line break by actually drawing a line on the web page -->
+</p>
+
+<!-- Working with links, images and attributes -->
+
+<!-- a tags (links) are inline elements  -->
+
+<!-- target is set to _blank to open the link in new tab -->
+
+<a href="https://www.google.com" style="text-decoration: none;">click this link to surf the web</a> <hr>
+<a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">click this link to join the facebook community</a><br>
+
+
+<!-- images are also inline elements in html -->
+
+<img src="/14Daysofcss/Day-1/IMG-20201026-WA0006.jpg" alt="displaying_image" width="300">
+<img src="/14Daysofcss/Day-1/IMG-20201026-WA0006.jpg" alt="displaying_image" width="200">
+
+<!-- working with lists and tables -->
+
+
+<p>There are two types of lists are there</p>
+
+<!-- type = "1" is default for ordered lists  -->
+
+<ol type="i">
+    <li>unordered lists</li>
+    <li>ordered lists</li>
+</ol>
+
+<!-- for unordered lists the tag used is ul -->
+
+<h3>Current ipl points table</h3>
+
+<!-- tables are block level elements  -->
+
+<table>
+   <!-- table heading consists of team name, noOfmatches, wins and losses  -->
+   <thead>
+       <tr>
+           <th>Team</th>
+           <th>Wins</th>
+           <th>Matches</th>
+           <th>Losses</th>
+       </tr>
+   </thead>
+   <tbody>
+       <tr>
+           <td>DC</td>
+           <td>13</td>
+           <td>10</td>
+           <td>3</td>
+       </tr>
+       <tr>
+           <td>CSK</td>
+           <td>13</td>
+           <td>9</td>
+           <td>4</td>
+       </tr>
+       <tr>
+           <td>RCB</td>
+           <td>13</td>
+           <td>8</td>
+           <td>5</td>
+       </tr>
+       <tr>
+           <td>KKR</td>
+           <td>13</td>
+           <td>6</td>
+           <td>7</td>
+       </tr>
+   </tbody>
+</table>
+
+
+<!-- working with forms and inputs  -->
+
+ <label for="name">Name</label>
+ <input type="text" name="name" id="name"> <br>
+
+ <label for="email">Email</label>
+ <input type="email" name="email" id="email"> <br>
+
+ <label for="feedback">Give your feedback</label> <br>
+ <textarea name="feedback" id="feedback" rows="8" cols="50"></textarea> <br>
+
+ <label for="password">Enter your password</label>
+ <input type="password" name="password" id="password"> <br>
+
+ <label for="selection">Gender</label>
+ <input type="radio" name="selection" id="selection"> Male 
+ <input type="radio" name="selection" id="selection"> Female 
+ <input type="radio" name="selection" id="selection"> Other <br>
+
+ <label for="answer">Solid form of water is</label>
+ <input type="checkbox" name="checkbox" id="checkbox"> Gas
+ <input type="checkbox" name="checkbox" id="checkbox"> Water
+ <input type="checkbox" name="checkbox" id="checkbox"> Ice <br>
+
+GAME OF THRONES
+ <select name="GOT" id="GOT">
+     <option value="starks">Starks</option>
+     <option value="lannisters" selected>Lannisters</option>
+     <option value="baratheons">Baraetheons</option>
+ </select>
+
+
+<!-- DIVS,SPANS,CLASSES AND IDS -->
+
+<!-- there is no functional difference between ids and classes but ids are unique -->
+
+<div id="main-header" class="card-class">
+    <h2>My Website</h2>
+    <p>This is just a dummy website to practice html</p>
+</div>
+
+<div id="main-navigation-bar">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</div>
+
+<div id="about-section" class="card-class">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor ullam assumenda eaque, eligendi 
+    voluptas. Ipsa culpa tempore nam dolor molestias at quidem labore sed.Lorem ipsum dolor sit amet 
+    consectetur, adipisicing elit. Illum, expedita. <span id="span-id">Lorem ipsum dolor sit amet.</span>
+</div>
+
+<div id="contact-section " class="card-class">
+    <ul>
+        <li>Address : 50 Main st.Boston MA</li>
+        <li>Phone : (555) 555-5555</li>
+        <li>Country : United States</li>
+    </ul>
+</div>
+
+
+</body>
+
+</html>

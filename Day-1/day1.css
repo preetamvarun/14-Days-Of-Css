@@ -1,0 +1,19 @@
+.card-class{
+    background-color: #f4f4f4;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+#main-navigation-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#main-navigation-bar ul li{
+    list-style: none;
+}
+
+#span-id{
+    background-color: black;
+    color: yellow;
+}
