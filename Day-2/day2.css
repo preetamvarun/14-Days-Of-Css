@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clr{
+    clear: both;
+}
+
+body p{
+    padding: 10px;
+}
+
+#welcome h3{
+    color: blue;
+    font-size: 20;
+}
+
+#welcome{
+    background-color: #f4f4f4;
+    border: 2px solid white;
+}
+
+#about h3, #welcome h3{
+    padding-left: 10px;
+}
+
+#about{
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    background: url('/14Daysofcss/Day-2/images/spidy.jpg') no-repeat center center/ cover;
+    background-attachment: fixed;
+}
+
+.border-class{
+    border: 2px solid white;
+}
+
+.border-class h3{
+    padding : 15px 0px;
+}
+
+.border-class span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* implementing floats  */
+
+.main-container{
+    background-color: white;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.sub-container{
+    border: 1.5px solid black;
+    background-color: #f4f4f4;
+    text-align: justify;
+    margin-bottom : 10px;
+}
+
+.sub-container h3{
+    padding-left : 8px;
+}
+
+#box-2{
+    width: 68%;
+    float: left;
+}
+
+#box-3{
+    width: 28%;
+    float: right;
+}
+
+/* Buttons styling  */
+
+.btn{
+    margin-left : 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    background-color: greenyellow;
+    border : none;
+    padding : 5px 12px;
+    border-radius : 5px;
+    cursor : pointer;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+/* Styling vertical nav-bar */
+
+.vertical-navigation-menu{
+    border: 1px solid black;
+    background-color : #f4f4f4;
+    width : 350px;
+    margin : 8px;
+    border-radius : 10px;
+}
+
+.vertical-navigation-menu li{
+    padding : 4px;
+    list-style: none;
+    border-bottom: solid 1px #333;
+}
+
+.vertical-navigation-menu :last-child{
+    border-bottom: none;
+}
+
+.vertical-navigation-menu li a{
+    text-decoration : none;
+    line-height: 2.4em;
+    color: black;
+}
+
+.vertical-navigation-menu li a:hover{
+    color: coral;
+}
+
+/* Styling horizontal nav-bar*/
+
+.horizontal-navigation-menu{
+    background-color: #4c6ca0;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.horizontal-navigation-menu li{
+    display: inline-block;
+}
+
+.horizontal-navigation-menu li a{
+    text-decoration : none;
+    color: white;
+    display: inline-block;
+    padding : 15px 20px;
+}
+
+.horizontal-navigation-menu li a:hover{
+    background-color: #446190;
+}
+
+/* using display inline-block property to style things */
+
+.using-inline-block-elements{
+    margin : 10px;
+}
+
+.box1{
+    border : 1px solid #333;
+    padding : 10px;
+    margin : 10px 0px;
+    background-color: #f4f4f4;
+    width: 33%;
+    display: inline-block;
+}
+
+.box1 h3{
+    padding-left: 10px;
+}
+
+/* working with position styles  */
+
+.position-container{
+    position: relative;
+    background-color : #333;
+    border: 1px solid white;
+    height: 1000px;
+}
+
+.container-box{
+    display: inline-block;
+    height : 130px;
+    width : 130px;
+}
+
+#box1{
+    position: relative;
+    top: 40px;
+    color: white;
+    background-color: olivedrab;
+}
+
+#p1{
+    position: relative; 
+    text-align: center;
+    top: 45px;
+} 
+
+#box2{
+    background-color: #4c6ca0;
+    color: white;
+    position: fixed;
+    right : 0px;
+    bottom: 0px;
+}
+
+
+#box3{
+    position : absolute;
+    top: 20px;
+    right : 35px;
+    background-color: greenyellow;
+}
+
+#box4{
+    background-color: magenta;
+    position: sticky;
+    top: 10px;
+    left: 540px;
+}
+
+h4{
+    color: brown !important;
+}
+
+.h4cls{
+    color: black;
+    margin-top: -4px;
+}
+
+/* visibility : hidden => makes the element dissapear but the space reamins the same
+display : none => completely removes the element from the browswer
+ */
+
+.para{
+    /* visibility: hidden; */ 
+    display: none;
+}
