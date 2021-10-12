@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing : border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    color: white;
+    font-size : 18px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+body h1{
+    display: none;
+}
+
+
+/* Writing media queries for mobile screens => general break point is 500px */
+
+@media(max-width : 500px){
+    body{
+        background-color: blue;
+    }
+    #mobiles h1{
+        display: block;
+    }
+}
+
+
+/* Writing media queries for tablets => general break point is [768, 501] */
+
+@media(min-width : 501px) and (max-width : 768px){
+    body{
+        background-color : orange;
+    }   
+    #tablets h1{
+        display: block;
+    }
+}
+
+/* Writing media queries for desktops => general break point is [769,1200] */
+
+@media(min-width : 769px) and (max-width : 1200px){
+    body{
+        background-color : yellowgreen;
+    }
+    #desktop h1{
+        display: block;
+    }
+}
+
+
+/* Writing media queries for wide screens */
+
+@media(min-width : 1201 px){
+    body{
+        background-color : red;
+    }
+    #widescreen h1{
+        display : block;
+    }
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./day4.css"> -->
+    <title>Document</title>
+    <!-- Writing internal css for vh and vw -->
+    <style>
+        *{
+            margin : 0rem;
+            padding : 0rem;
+            box-sizing : border-box;
+        }
+
+        header{
+            color: white;
+            text-align : center;
+            background: url('./images/136441.jpg') no-repeat center center/cover;
+            height: 100vh;
+            padding-top: 15rem;
+            overflow: auto;
+        }
+
+        header p{
+            padding : 1rem 0rem;
+        }
+
+        .btn{
+            display: inline-block;
+            text-decoration : none;
+            color : black;
+            padding : 0.70rem 2rem;
+            background-color: white;
+        }
+
+        @media (max-height : 380px) and (min-height : 320px){
+            header{
+                padding-top: 10rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <div id="mobiles">
+        <h1>Mobile view</h1>
+    </div>
+    <div id="tablets">
+        <h1>Tablet view</h1>
+    </div>
+    <div id="desktop">
+        <h1>Desktop view</h1>
+    </div>
+    <div id="widescreen">
+        <h1>widescreen view</h1>
+    </div> -->
+
+    <header>
+        <h1>Welcome to our website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, placeat.</p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nihil, delectus porro officia 
+        aspernatur odit eum veritatis corporis libero, soluta nemo id rerum commodi minus consequuntur, officiis 
+        dolorum numquam reprehenderit ducimus. Quos vero molestiae dignissimos ea harum illo, quam aliquam, itaque 
+        impedit asperiores rem quaerat possimus cum natus nemo quod.</p>
+    </section>
+
+</body>
+
+</html>
+
+
+
+<!-- 
+pratices to use 
+
+use rem over pixels
+use fluid widths as oppose to fixed  
+media queries
+set viewport/scale 
+mobile method first -->
