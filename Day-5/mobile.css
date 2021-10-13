@@ -1,0 +1,78 @@
+/* Style sheet for mobiles and tablets  */
+
+
+
+
+@media (max-width : 768px){
+
+    /* Styling horizontal menu for tablets and mobile screens */
+
+    .nav-bar h1, .nav-bar ul{
+        float: none;
+        text-align: center;
+    }
+    .nav-bar h1{
+        padding-top: 10px;
+    }
+    .nav-bar li{
+        float : none;
+    }
+    .nav-bar li a{
+        font-size : 20px;
+    }
+
+/* No need to style show case view. It's already looking good. */
+
+
+/* Styling history section of hotel website  */
+
+.history-div img{
+    display: none;
+}
+
+.content-div{
+    width : 100%;
+}
+
+.position-div a{
+    display: none;
+}
+
+.box-cls,.box-contact-cls{
+    float: none;
+    width : 100%;
+}
+
+
+/* Styling about BT hotel  */
+
+.text-div{
+    float : none;
+    width : 100%;
+    padding : 20px;
+    position : static;
+    text-align : center;
+}
+
+.text-div p{
+    font-size : 20px;
+    text-align: justify;
+}
+
+.about-image-div img{
+    max-width: 50%;
+    padding-top : 0px;
+    padding-bottom : 10px;
+}
+
+.review-1 img, .review-2 img{
+    border-radius: 100%;
+    width : 25%;
+    float: left;
+    padding-top : 10px;
+    padding-right : 10px;
+}
+
+
+}
+
