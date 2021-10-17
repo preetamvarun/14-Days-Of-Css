@@ -1,0 +1,35 @@
+@media (max-width : 768px){
+
+    #edge-ledger-section{
+        text-align: center;
+    }
+
+    .nav-bar-section{
+        display: flex;
+        flex-direction : column;
+        justify-content: space-between;
+    }
+
+    .show-case-content{
+        text-align : center;
+    }
+
+    .show-case-area .show-case-content{
+        position : absolute;
+        top: 8.5rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+    
+    .what-we-do{
+        display: block;
+    }
+    #who-we-are-img{
+        display: none;
+    }
+    .our-clients .client-images :last-child{
+        display: none;
+    }
+}

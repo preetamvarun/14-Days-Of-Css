@@ -1,0 +1,266 @@
+/* importing google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Resetting everything  */
+
+*{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+}
+
+/* Apply the font to the entire website at once */
+
+body{
+    font-family : 'Roboto';
+}
+
+/* Styling nav-bar section  */
+
+.nav-bar-section{
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+    padding: 0rem 1.5rem;
+    background-color: #333;
+    align-items: center;
+}
+
+
+#edge-ledger-section span, i{
+    color: #93CB52;
+}
+
+#edge-ledger-section i{
+    font-size : 1.6rem;
+}
+
+#edge-ledger-section {
+    padding : 1.2rem;
+}
+
+.nav-bar-section ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar-section li {
+    margin : 0.8rem;
+    align-items: center;
+}
+
+.btn-cls{
+    text-decoration : none;
+    color: #fff;
+    display: inline-block;
+    padding : 0.8rem;
+}
+
+.nav-bar-section ul li a:hover{
+    background-color: #93CB52;
+    border-radius : 0.5rem;
+}
+
+/* Styling show-case area  */
+.show-case-area{
+    background: url('./Images/image_resources/showcase.jpg') no-repeat center center/cover;
+    height : 100vh;
+}
+
+.show-case-area .show-case-content{
+    color: #fff;
+    display: flex;
+    flex-direction : column;
+    height : 100%;
+    justify-content: center;
+    align-items: center;
+    position : absolute;
+    /* overlay styling  */
+    top: 4.32rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.show-case-content p{
+    padding : 1rem;
+}
+
+.show-case-content a{
+    background-color: #93CB52;
+    border-radius : 0.3rem;
+    padding : 0.5rem 1.5rem;
+}
+
+.show-case-content a:hover{
+    background-color: #7ab436;
+}
+
+
+/* Styling what we do section  */
+
+.what-we-do{
+    display: flex;
+    max-width : 1080px;
+    margin : auto;
+    padding : 2rem 0rem;
+}
+
+.To-Do{
+    display: flex;
+    align-items: center;
+    padding : 0rem 1.5rem;
+}
+
+.what-we-do .To-Do i{
+    color : #000;
+    background-color : #93CB52;
+    font-size : 2rem;
+    border-radius : 50%;
+    padding : 1rem;
+}
+
+.what-we-do .To-Do .to-do-content{
+    padding : 1rem;
+}
+
+.what-we-do .To-Do .to-do-content h3{
+    margin-bottom: 0.5rem;
+}
+
+.what-we-do .To-Do .to-do-content p{
+    line-height : 1.5rem;
+}
+
+
+/* Styling who we are section  */
+
+.who-we-are{
+    display: flex;
+}
+
+.who-we-are div{
+    flex: 1;
+}
+
+#who-we-are-img{
+    background: url('./Images/image_resources/people.jpg') no-repeat center center/cover;
+}
+
+#who-we-are-content-section{
+    background: #333;
+    color: white;
+    padding : 1.4rem;
+}
+
+#who-we-are-content-section p{
+    padding : 0.8rem 0rem;
+}
+
+#who-we-are-content-section h2{
+    margin-bottom: 0.75rem;
+}
+
+#who-we-are-content-section ul{
+    list-style: none;
+}
+
+#who-we-are-content-section ul li{
+    border-bottom: 0.1rem solid #444;
+    padding : 0.8rem 0rem;
+}
+
+#who-we-are-content-section ul:last-child{
+    border: none;
+}
+
+/* Styling clients-section  */
+
+.client-images{
+    max-width : 1080px;
+    margin : 1.5rem auto;
+    text-align: center;
+}
+
+.our-clients .client-images img{
+    display: inline-block;
+    width : 11.5%;
+    margin: 0rem 1.4rem;
+}
+
+/* Styling contact form page  */
+
+.form-container{
+    color: white;
+    background-color: #93CB52;
+    height: 100%;
+}
+
+.form-inner-container{
+    max-width : 960px;
+    margin : auto;
+    padding: 3.0rem;
+}
+
+.label-cls{
+    display: block;
+    padding-bottom: 0.4rem;
+}
+
+.input-cls{
+    padding : 0.8rem 0rem;
+}
+
+.input-cls input{
+    width: 100%;
+    height: 2.2rem;
+}
+
+.input-cls textarea{
+    width: 100%;
+}
+
+.input-cls ::placeholder{
+    padding : 0.3rem;
+}
+
+.form-container button{
+    display: block;
+    border : none;
+    width : 100%;
+    font-size: 1.2rem;
+    padding : 0.75rem 1.2rem;
+    background-color: #000;
+    color: white;
+}
+.form-container button:hover{
+    background-color: #7ab436;
+    cursor: pointer;
+}
+.box-contact-cls{
+    background-color: #333 !important;
+    color: white;
+}
+.icons-contact-div{
+    background-color: #333;
+}
+.box-contact-cls{
+    margin-top: 2.6rem;
+}
+
+/* Styling Footer Section   */
+
+.footer{
+    background-color : #444444;
+    height : 5rem;
+}
+
+.footer p{
+    position: relative;
+    text-align : center;
+    top: 40%;
+    color: white;
+}
