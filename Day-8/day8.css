@@ -1,0 +1,179 @@
+*{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+}
+
+:root{
+    --primary-color : orange;
+    --secondary-color : cyan;
+    --box-padding : 1rem;
+    --box-margin : 1rem;
+    --box1-flex : 1;
+    --box2-flex : 5;
+    --box3-flex : 3;
+}
+
+/* Working with css variables  */
+
+.main-variable-box{
+    display: flex;
+}
+
+.main-variable-box .box-var{
+    background-color : var(--primary-color);
+    padding : var(--box-padding);
+    margin : var(--box-margin);
+}
+
+#box-1{
+    flex : var(--box1-flex);
+}
+
+#box-2{
+    flex : var(--box2-flex);
+}
+
+
+#box-3{
+    flex : var(--box3-flex);
+}
+
+
+/* Target Selectors  */
+
+
+/* Styling direct childs to the div  */
+/* 
+div > p{
+    background-color: #333;
+    color: white;
+} */
+
+/* Styling the element which is directly after the div (not inside) */
+/* 
+div + p{
+    background-color: black;
+    color: yellow;
+} */
+
+/* Styling by specific attributes  */
+
+/* Mostly used in styling form inputs  */
+
+input[type = 'text'],
+input[type = 'password']
+{
+    width : 100%;
+}
+
+input[type = 'email']{
+    width : 25%;
+    margin: 1rem;
+}
+
+input[type = 'submit']{
+    background-color: cornflowerblue;
+    color: white;
+    padding : 0.5rem;
+}
+
+input[type = 'submit']:hover{
+    cursor:pointer;
+}
+
+textarea{
+    width : 30%;
+    margin : 0.5rem 0rem;
+    display: block;
+}
+
+a[target = '_blank'], a[target = '_self']{
+    display: inline-block;
+    text-decoration : none;
+}
+
+/* nth Child psuedo selectors  */
+
+ul{
+    list-style: none;
+    padding : 0.5rem;
+    margin : 0.5rem;
+}
+
+/* Styling first list item  */
+li:first-child{
+    color: red !important;
+    background-color : yellow !important;
+}
+
+/* Styling last list item  */
+li:last-child{
+    color : green !important;
+    background-color : violet !important;
+}
+
+
+/* Styling every odd list item  */
+li:nth-child(odd){
+    color : green;
+    background-color : cyan;
+}
+
+/* Styling every even list item  */
+li:nth-child(even){
+    color : blue;
+    background-color : darkgreen;
+}
+
+
+/* Styling every 2nd element (here 0 is offset value) */
+li:nth-child(2n+0){
+    color: yellow;
+    background-color : black;
+}
+
+/* Styling every 2nd element from 5th element */
+li:nth-child(2n+5){
+    background-color : violet;
+    color: pink;
+}
+
+/* before and after psuedo selectors  */
+.is_required:after{
+    content : "*";
+    color : red;
+    padding : 0.25rem;
+}
+
+input[type='text']{
+    width : 50%;
+}
+
+.main-box{
+    display: flex;
+}
+
+.box{
+    text-align : center;
+    background-color : greenyellow;
+    padding : 1rem;
+    margin : 1rem;
+    /*offset x , offset y, color  (box shadow will be applied to bottom right)*/ 
+    /* -offset x, -offset y, color (box shadow will be applied to top left)*/
+    box-shadow: +0.3rem +0.3rem red;
+    /*offset x, offset y, blur radius color*/
+    box-shadow : 0.3rem 0.3rem 0.4rem red;
+    /*
+    inset will do the opposite 
+    box-shadow : inset -3px -3px teal; (shadow will be applied to bottom right)
+    box-shadow : inset 3px 3px teal; (shadow will be applied to top left)
+    */
+    /* 
+    we can even add multiple shadows
+    box-shadow : 0.2rem 0.2rem red , 0.3rem 0.3rem orange; */
+
+    /* for the text shadowds we have horizontal & vertical shadows and color  */
+}
+
+
