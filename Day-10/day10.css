@@ -1,0 +1,178 @@
+/* *{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+} */
+
+/* Grid Columns */
+
+/* 
+.box{
+    display : grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    grid-gap : 0.1rem;
+} */
+
+/* grid-template-columns : 200px 120px 40px 50px; */
+/* Here fr stands for fraction  */
+/* grid-template-columns : 1fr 2fr 3fr 4fr; */
+
+
+
+/* Grid Rows */
+/* .box{
+    display: grid;
+
+    /* Since grid is two dimensional we have the flexibility 
+    to use both rows and columns at the same time */
+
+    /* grid-template-columns : repeat(4,1fr);
+    grid-template-rows: 1fr 2fr 2fr; */
+    /* This style applies for all the rows below 3 */
+    /* grid-auto-rows: 2fr; */
+/* } 
+
+
+/* .min-box:nth-child(1){
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end : 4;
+    grid-row-start : 1;
+    grid-row-end : 3;
+}
+
+.min-box:nth-child(9){
+    background-color : orange;
+    grid-column-start : 2;
+    grid-column-end : 5;
+    grid-row-start : 3;
+    grid-row-end : 6;
+} */
+
+/* There is shorter way of writing grid-row/column-start/end  */
+
+/*
+
+.min-box:nth-child(4){
+    background-color : green;
+    grid-row: 2/ span 4;
+    /* Starting at two and ending at 4*/
+/* }
+
+/*
+
+.min-box:nth-child(8){
+    background-color : gold;
+    grid-row : 3/ span 5;
+}
+
+.min-box:nth-child(5){
+    background-color : cyan;
+}
+
+.min-box:nth-child(15){
+    grid-column : 4 /span 2;
+    background-color : rosybrown;
+}
+
+.min-box:nth-child(16){
+    background-color : brown;
+    grid-column: 1/ span 5;
+
+}
+
+.min-box:nth-child(7){
+    background-color : salmon;
+    grid-column : 2/ span 2;
+}
+
+.min-box:nth-child(6){
+    background-color : violet;
+    grid-column: 2/ span 4;
+}
+
+.min-box:nth-child(12){
+    background-color : wheat;
+    grid-column: 1 /span 1;
+}
+
+.min-box{
+    text-align : center;
+    padding : 1rem;
+    background-color : #ccc;
+    border : 1px solid #f4f4f4;
+    /* margin : 0.1rem; */
+/* }
+
+
+/* practising grid template areas  */
+
+
+/*
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'header header header'
+    'welcome-section welcome-section contact-section'
+    'box-1 box-2 box-2'
+    'box-3 box-3 box-3'
+    'footer footer footer';
+}
+
+.header{
+    grid-area: header;
+    text-align : center;
+}
+
+.welcome-section{
+    grid-area : welcome-section;
+}
+
+.contact-section{
+    grid-area : contact-section;    
+}
+
+.box-1, .box-2, .box-3, .contact-section
+,.welcome-section, .header{
+    background-color: #f4f4f4;
+    border : 1px solid #ccc;
+}
+
+.box-1{
+    grid-area : box-1;
+}
+
+.box-2{
+    grid-area : box-2;
+}
+.box-3{
+    grid-area : box-3;
+}
+
+footer{
+    border : 1px solid #ccc;
+    grid-area : footer;
+    background-color: #333;
+    color : white;
+    padding : 1rem;
+    text-align : center;
+}
+
+@media (max-width : 768px){
+    .container{
+        grid-template-areas: 
+    'header header header'
+    'welcome-section welcome-section welcome-section'
+    'contact-section contact-section contact-section'
+    'box-1 box-1 box-1'
+    'box-2 box-2 box-2'
+    'box-3 box-3 box-3'
+    'footer footer footer';
+    }
+}
+
+*/
+
