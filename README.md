@@ -1,2 +1,2 @@
-# 14-Days-Of-Css
+# 10-Days-Of-Css
 My CSS Learning Journey
