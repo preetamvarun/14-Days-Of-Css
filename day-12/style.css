@@ -1,0 +1,46 @@
+body{
+    background-color: teal;
+}
+
+.box{
+    height : 200px;
+    width : 200px;
+    background-color: white;
+    animation-name : animateThis;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* animation-direction: reverse; */
+    /* animation-direction : alternate; */
+    /* animation-direction : alternate-reverse; */
+    animation-timing-function: linear; /*this is default*/
+    animation-timing-function: ease-in; /*starts slow ends fast*/
+    animation-timing-function: ease-out; /*starts fast ends slow*/
+    animation-timing-function : ease-in-out /*starts slow and ends slow*/
+}
+
+@keyframes animateThis{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color : green;
+        transform : translateX(100%);
+        border-radius: 0 50% 0 0;
+        animation-play-state: paused;
+    }
+    50%{
+        background-color : gray;
+        transform : translate(100%,100%);
+        border-radius : 50% 50% 0 0;
+    }
+    75%{
+        background-color : violet;
+        transform : translate(0,100%);
+        border-radius : 50% 50% 50% 0;
+    }
+    100%{
+        background-color : mediumvioletred;
+        border-radius : 50% 50% 50% 50%;
+    }
+}
