@@ -1,0 +1,85 @@
+*, *::after, *::before{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 166, 0, 0.342);
+}
+
+.box{
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    background-color: orange;
+    padding : 1.5rem;
+    font-size : 1.2rem;
+
+    /*
+    box-shadow : a` a b c d e f;
+    a` -> inset
+    a -> horizontal offset 
+    b -> vertical offset
+    c -> blur radius.
+    d -> spread (take c pixels and then start the blur). It can take a negative value.
+    f -> color
+    */
+    box-shadow : 10px 10px 12px 5px currentColor; /* using the currentColor of the box*/
+    box-shadow : 10px 10px 12px 5px red; /* Here we are using the custom color for the box */
+    box-shadow : inset 0px 0px 12px 0px red;
+    
+    /* we can even use multiple box shadows */
+    box-shadow : 10px 10px 12px 5px blue, -10px -10px 18px 3px red,
+    20px -20px 15px 10px violet, 30px 30px 18px 15px green;
+
+    /*
+    box-shadow stack for the above live is 
+    blue
+    red
+    violet
+    green
+    */
+    
+    /* CREATING FAKE BORDER USING BOX-SHADOW */
+    box-shadow : inset 0px 0px 0px 20px red,
+    inset 0px 0px 0px 40px green, inset 0px 0px 0px 60px coral, inset 0px 0px 0px 80px violet;
+    padding : 5.5rem;
+
+}
+
+.peel{
+    background-color: white;
+    display: inline-block;
+    position : relative;
+    padding : 4.5rem;
+    margin : 13.43rem;
+}
+
+.peel::before, .peel::after{
+    content: "";
+    position: absolute;
+    top : 90%;
+    bottom : 10px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,.5);
+    z-index : -1;
+}
+
+.peel::before{
+    background-color : violet;
+    left : 2px; 
+    right : 45px;
+    transform: rotate(-4deg);
+}
+
+.peel::after{
+    content : "";
+    position : absolute;
+    background-color : crimson;
+    left : 45px; 
+    right : 2px; 
+    transform: rotateZ(4deg);
+}
+
