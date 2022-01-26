@@ -1,0 +1,340 @@
+*{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+}
+
+.a,.b,.c,.d{
+    height : 60px;
+    width : 60px;
+}
+
+.b,.c,.d{
+    position: absolute;
+    top: 0;
+}
+
+/* showing b on top  */
+.b{
+    z-index : 100;
+}
+
+/* showing c on top  */
+.c{
+    z-index : 134;
+}
+
+/* showing d on top */
+.d{
+    z-index : 150;
+}
+
+.b, .c , .d{
+    z-index : -1;
+}
+
+.a{background-color: red;}
+.b{background-color: grey; margin-left: 10px;}
+.c{background-color: black; margin-left: 20px;}
+.d{background-color: orange; margin-left : 30px;}
+
+
+/* border pop button animation */
+.para{
+    display: inline-block;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-animation,.underline-btn,.border-pop,.door-shutter, .left-shutter, .right-shutter, .top-shutter, .bottom-shutter{
+    height : 50px;
+    width : 150px;
+    background-color: #c3c3c3;
+    margin-left: 20px;
+    margin-top : 20px;
+    position : relative;
+}
+
+.border-pop::before{
+    content : '';
+    position : absolute;
+    top : 0; right : 0; bottom : 0;
+    left : 0;
+    background-color : white;
+    border : 2px solid #c3c3c3;
+    z-index : -1;
+    transition: all 150ms ease-in-out;
+}
+
+.border-pop:hover::before{
+    transform: scale(1.1,1.35);
+}
+
+.left-shutter::before{
+    content : '';
+    position: absolute;
+    background-color : red;
+    top : 0; right : 0; bottom : 0; 
+    left : 0;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.left-shutter:hover::before{
+    transform: scaleX(1);
+}
+
+.right-shutter::before{
+    content : '';
+    position: absolute;
+    background-color : red;
+    top : 0; right : 0; bottom : 0; 
+    left : 0;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.right-shutter:hover::before{
+    transform: scaleX(1);
+}
+
+.top-shutter::before{
+    content : '';
+    position: absolute;
+    background-color : red;
+    top : 0; right : 0; bottom : 0; 
+    left : 0;
+    transform: scaleY(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin : top;
+}
+
+.top-shutter:hover::before{
+    transform: scaleY(1);
+}
+
+.bottom-shutter::before{
+    content : '';
+    position: absolute;
+    background-color : red;
+    top : 0; right : 0; bottom : 0; 
+    left : 0;
+    transform: scaleY(0);
+    transition: all 0.5s ease-in-out;
+    transform-origin : bottom;
+}
+
+.bottom-shutter:hover::before{
+    transform: scaleY(1);
+}
+
+.door-shutter::before{
+    content : '';
+    position : absolute;
+    background-color : red;
+    top : 0; right : 0; bottom : 0; left : 0;
+    transform : scaleX(0);
+    transition : all 0.5s ease-in-out;
+    transform-origin : left;
+}
+
+.door-shutter:hover::before{
+    transform : scaleX(0.5);
+}
+
+.door-shutter::after{
+    content : '';
+    position : absolute;
+    background-color : red;
+    top : 0; right : 0; bottom : 0; left : 0;
+    transform : scaleX(0);
+    transition : all 0.5s ease-in-out;
+    transform-origin : right;
+}
+
+.door-shutter:hover::after{
+    transform : scaleX(0.5);
+}
+
+#z-para{
+    z-index : 100;
+}
+
+.underline-btn::before{
+    content : '';
+    position : absolute;
+    left : 0; right : 0; bottom : 0;
+    height : 3.5px;
+    background-color : red;
+    transform : scaleX(0);
+    transition : all 200ms ease;
+}
+
+.underline-btn:hover::before{
+    transform : scaleX(1);
+}
+
+.circle-animation::before{
+    content : '';
+    position : absolute;
+    left : 0; right : 0; bottom : 0;
+    top : 0;
+    background-color: #c3c3c3;
+    border-radius: 50%;
+    transform : scale(1.4);
+    transition: all 750ms ease;
+}
+
+.circle-animation{
+    overflow: hidden;
+    background-color: red;
+    transition: color 1150ms ease-in-out;
+}
+
+.circle-animation:hover{
+    color: white;
+}
+
+.circle-animation:hover::before{
+    transform : scale(0);
+}
+
+.circle{
+    height : 40px;
+    width : 80px;
+    background-color: #c3c3c3;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-top : 10px;
+    position: relative;
+    transition: all 350ms ease-out;
+}
+
+.circle::before{
+    position: absolute;
+    content: '';
+    height : 40px;
+    width : 40px;
+    background-color: blue;
+    border-radius: 40px;
+    transition: all 400ms ease-in-out;
+}
+
+.inputCheck{
+    display: none;
+}
+
+.inputCheck:checked + .circle::before{
+    background-color: yellow;
+    transform: translateX(100%);
+}
+
+.inputCheck:checked + .circle{
+    background-color: violet;
+}
+
+.image::before{
+    content: "";
+    position: relative;
+}
+
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+}
+
+.image::before{
+    position: absolute;
+    content : '';
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    background: url('./crop.jpg') center center/contain;
+    opacity: .1;
+}
+
+.image h1{
+    position: relative;
+    color : black;
+}
+
+.first-section{
+    background-color: yellow;
+    height : 100vh;
+    display: grid;
+    place-items: center;
+    position : relative;
+}
+
+.first-section::before,
+.first-section::after{
+    position : absolute;
+    content : '';
+    height : 100px;
+    width : 100px;
+    bottom : 0;
+    margin-bottom : -.6rem;
+    background-color: yellow;
+    z-index: 2;
+}
+
+.first-section::before{
+    right : 50%;
+    transform: skew(0deg,20deg);
+}
+
+.first-section::after{
+    left : 50%;
+    transform : skewY(-20deg);
+}
+
+
+.smiley{
+    height : 100px;
+    width : 100px;
+    border-radius : 50%;
+    position : relative;
+    background-color: rgba(128, 128, 128, .5);
+}
+
+.smiley::after{
+    content : ":)";
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    font-size : 2rem;
+    color : black;
+}
+
+.section-two{
+    background-color : orange;
+    height : 100vh;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%);
+    /* margin-bottom: -7rem; */
+    margin-bottom: -8vw;
+}
+
+.section-two img{
+    height : 400px;
+    width : 300px;
+    /* clip-path: circle(); */
+    /*(top-left -> (this is 0,0), top-right , bottom-right, bottom-left)*/
+    /* clip-path: polygon(0 20%,100% 0,100% 100%,0 100%); */
+
+}
+
+.section-three{
+    background-color : green;
+    height : 100vh;
+}
