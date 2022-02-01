@@ -1,0 +1,94 @@
+// A partial is simply a saas file with a leading underscore
+
+// we don't have to put the extention
+@import './reset'; 
+@import './variables';
+
+
+.card{
+    display: inline-block;
+
+    #{&}__dog{
+        height: 200px;
+        width : 200px;
+        border-radius : 100%;
+        display: inline-block;
+        transition: all 1s ease;
+
+        &:hover{
+            border-radius: 0%;
+        }
+
+    }
+
+    #{&}__para{
+        text-align : center;
+    }
+
+}
+
+.card--borderOne{
+    border: getbw("light-border") solid mediumpurple;
+}
+
+.card--borderTwo{
+    border: getbw("large-border") solid peru;
+}
+
+.btn{
+    border : none;
+    position: relative;
+    left : 50%;
+    transform: translateX(-50%);
+    padding : .5rem 1.8rem;
+    margin-bottom : .5rem;
+}
+
+.btn--color1{
+    color: $primary-color;
+    background-color: $secondary-color;
+    font-weight: getfw("bold");
+}
+
+.btn--color2{
+    color : $secondary-color;
+    background-color: $primary-color;
+    font-weight: getfw("normal-weight");
+}
+
+.mainCard{
+    @include centerThroughFlex(row,space-evenly);
+
+    background-color: pink;
+
+    #{&}__card{
+        height : 400px - 100px;
+        // we can't mix types in scss/saas
+        width : 200px;
+        text-align: center;
+    }
+
+    #{&}__p{
+        position: relative;
+        background-color: rebeccapurple;
+        top : 50%;
+        transform: translateY(-50%);
+    }
+
+    #{&}__para{
+        @extend .mainCard__p;
+        color : white;
+    }
+
+    #card-1{
+        background-color: red;
+    }
+
+    #card-2{
+        background-color: green;
+    }
+    
+    #card-3{
+        background-color: violet;
+    }
+}

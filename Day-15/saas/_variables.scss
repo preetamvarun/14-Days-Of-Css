@@ -1,0 +1,42 @@
+// create a map of border-widths 
+$border-widths : (
+    "light-border" : 2px,
+    "medium-border" : 3px,
+    "large-border" : 4px
+);
+
+// create a map for font-weights 
+
+$font-weights : (
+    "normal-weight" : 400,
+    "bold" : 900
+);
+
+// create a variables of colors 
+
+// we can assign boolean values to variables in saas
+
+$primary-color : green;
+$secondary-color : orange;
+
+
+// functions in sass 
+
+// function which returns border-widths
+@function getbw($var){
+    @return map-get($map: $border-widths , $key: $var);
+}
+
+// function which return font weights
+@function getfw($var){
+    @return map-get($map : $font-weights, $key : $var);
+}
+
+
+// mixins are a set of styles
+@mixin centerThroughFlex($direction,$jc){
+    display: flex;
+    justify-content: $jc;
+    align-items: center;
+    flex-direction: $direction;
+}
