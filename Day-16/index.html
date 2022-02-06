@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Design A Hamburger Menu</title>
+
+    <style>
+        .mainCard{
+    position: relative;
+    height : 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color : white;
+    background-color : rgba(13,110,139,.8);
+    z-index: 0;
+}
+
+.mainCard::before{
+    position: absolute;
+    content : '';
+    background : url('./showcase.jpg') no-repeat center center/cover;
+    top : 0;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    opacity : .45;
+}
+
+.mainCard__content{
+    max-width : 980px;
+    margin : 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.mainCard__mh, .mainCard__p{
+    padding : .4rem 1.2rem;
+    margin : 1rem;
+    font-weight : 750;
+}
+
+.mainCard__link{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding : .65rem;
+}
+
+.menuWrap{
+    position: fixed;
+    top : 0;
+    left : 0;
+    z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="menuWrap">
+
+        <input type="checkbox" class="toggler">
+
+        <div class="hamburger">
+            <!-- this holds the actual square  -->
+
+            <div>
+                <!-- this holds the inner lines  -->
+            </div>
+
+        </div>
+
+        <!-- create a div for menu items  -->
+
+        <div class="menu">
+
+            <!-- this div is responsible for darker part  -->
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">CONTACT ME</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+
+        <div class="mainCard">
+            <div class="mainCard__content">
+                <h1 class="mainCard__mh">Welcome</h1>
+                <p class="mainCard__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis beatae, 
+                illum sunt sequi officia culpa cupiditate distinctio dolorem at atque dignissimos quasi corrupti quaerat 
+                facilis cum. Soluta facere quas repellat rem corrupti? Quis, nulla ipsa?</p>
+                <a href="#" class="mainCard__link">Read More</a>
+            </div>
+        </div>
+
+
+</body>
+</html>
